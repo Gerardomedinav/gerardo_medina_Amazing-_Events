@@ -1,0 +1,338 @@
+/* GOOGLE FONTS */
+@import url(http://fonts.googleapis.com/css?family=New+Rocker);
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch:400);
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch:700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: url(../img/bg1.jpg) center top no-repeat #040305;
+    border: 0;
+    font: 13px Arial, Helvetica, sans-serif;
+    color: #9c9997;
+    line-height: 18px;
+    min-width: 320px;
+}
+
+a.logo img {
+    filter: brightness(0.60);
+}
+
+#inner {
+    position: relative;
+    z-index: 10;
+}
+
+header {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+/*--------------social icons--------------------------------*/
+.social_icom li {
+    display: inline-block;
+    margin: 0 4px;
+
+}
+
+.social_icom li a {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    display: block;
+    transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+ul.social_icom a img {
+    box-shadow: 4px 4px 4px 0 #000;
+    -moz-box-shadow: 4px 4px 4px 0 #000;
+    -webkit-box-shadow: 4px 4px 4px 0 #000;
+    width: 3rem;
+    height: 4rem;
+}
+
+.social_icom {
+    display: inline-block;
+    margin: 0 0px;
+    padding-top: 0px;
+    list-style: none;
+    white-space: nowrap;
+}
+
+ul.social_icon {
+    padding-left: 0px;
+}
+
+.social_icom li a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.top2_wrapper {
+    position: relative;
+    z-index: 30;
+    margin-bottom: -30px;
+}
+
+.top2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top2_inner {
+    position: relative;
+}
+
+.top3_wrapper {
+    padding-bottom: 30px;
+}
+
+.top3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top3_inner {
+    position: relative;
+}
+
+
+/* ============================= main menu nav ====================== */
+
+nav.navbar {
+    background-image: url(../img/menu_bg.jpg);
+}
+
+nav.navbar a {
+    font-family: 'Cabin Sketch';
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    filter: brightness(2);
+
+
+}
+
+a.navbar-brand {
+    font-size: 200% !important;
+    color: #fff !important;
+    display: flex;
+    background-color: black;
+    width: 50%;
+
+    text-align: justify;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav.navbar a:hover {
+    color: #e0129c;
+}
+
+nav.navbar a.nav-link {
+    font-size: large;
+
+}
+
+div.container.col-lg-8.col-md-12 {
+    font-size: 150%;
+    filter: brightness(1.75);
+    font-family: 'Cabin Sketch';
+
+}
+
+a.navbar-brand {
+    background-color: #9c9997;
+    font-size: 150%;
+    filter: brightness(1.75);
+    font-family: 'Cabin Sketch';
+
+}
+
+img#recorrer,
+img#recorrer2 {
+    background-color: #c5c2c1;
+}
+
+/*---------------------search-------------------------------*/
+div.container.col-lg-8.col-md-12 input:hover,
+label:hover {
+    color: #e0129c;
+}
+
+/*----------------------Pantalla tablet----------------------*/
+@media (max-width: 991px) {
+    div.container.d-flex.justify-content-end.p-3 {
+        flex-direction: column;
+    }
+
+    div.container.offset-md-2.p3 {
+        margin-left: 0;
+    }
+
+    div.container#nav {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 200%;
+    margin: 15px;
+}
+
+
+
+/* =============================cambia color del menu hamburguesa-----------------*/
+span.navbar-toggler-icon {
+    background-color: #9c9997;
+    color: #fff !important;
+}
+
+/*==============================form stats.html=============================*/
+#stats-table {
+    border: 2px rgb(99, 102, 99) solid;
+    background-color: #fff;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+#stats-table th {
+    background-color: #525150;
+    color: #f1e8e8;
+    font-size: 1.5em;
+}
+
+.table-subtitle {
+    font-weight: bold;
+    color: #9c9997;
+}
+
+/*=============================Footer=============================================*/
+footer {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+footer .social_icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+div.logo_footer a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+
+footer .menu li a {
+    font-size: 200%;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #ddd7d7;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/*-----------------------form styles--------------------*/
+label.form-label {
+    font-size: 2em;
+    color: #faf4f4 !important;
+    font-family: 'Cabin Sketch';
+
+}
+
+button#button_form.btn.btn-light.mb-3 {
+    margin: 15px;
+    background-color: #9c9997;
+    color: #0f0f0f;
+
+}
+
+button#button_form.btn.btn-light.mb-3:hover {
+    background-color: #e0129c;
+}
+
+/*----------------------Card styles--------------------*/
+.card {
+    max-width: 100%;
+}
+
+.card img {
+    width: 100%;
+}
+
+div.container.offset-md-2.p-3 {
+    margin-left: 10%;
+}
+
+/*--------------------details.html-------------------- */
+h1#titulo {
+    background-color: #525150;
+    font-family: 'Cabin Sketch';
+    color: #faf4f4;
+}
