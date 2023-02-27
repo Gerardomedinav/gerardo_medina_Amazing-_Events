@@ -26,6 +26,10 @@ a.logo img {
     filter: brightness(0.60);
 }
 
+a.logo img:hover {
+    filter: none !important;
+}
+
 #inner {
     position: relative;
     z-index: 10;
@@ -153,7 +157,7 @@ div.container.col-lg-8.col-md-12 {
 }
 
 a.navbar-brand {
-    background-color: #9c9997;
+    background-color: #363433;
     font-size: 150%;
     filter: brightness(1.75);
     font-family: 'Cabin Sketch';
@@ -162,13 +166,23 @@ a.navbar-brand {
 
 img#recorrer,
 img#recorrer2 {
-    background-color: #c5c2c1;
+    background-color: #9b9998;
+}
+img#recorrer:hover, img#recorrer2:hover {
+   background-color: #e0129c;
 }
 
 /*---------------------search-------------------------------*/
 div.container.col-lg-8.col-md-12 input:hover,
 label:hover {
     color: #e0129c;
+}
+.btn-outline-success {
+    --bs-btn-color: #c8dfd4;
+    --bs-btn-border-color: #969997;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d7186f;
+    --bs-btn-hover-border-color: #121111;
 }
 
 /*----------------------Pantalla tablet----------------------*/
@@ -204,6 +218,10 @@ label:hover {
 span.navbar-toggler-icon {
     background-color: #9c9997;
     color: #fff !important;
+}
+span.navbar-toggler-icon:hover {
+    background-color: #ff0e86;
+    color: #313030 !important;
 }
 
 /*==============================form stats.html=============================*/
@@ -314,16 +332,40 @@ button#button_form.btn.btn-light.mb-3 {
 }
 
 button#button_form.btn.btn-light.mb-3:hover {
-    background-color: #e0129c;
+    background-color: #a0046c;
 }
 
 /*----------------------Card styles--------------------*/
 .card {
     max-width: 100%;
+    --bs-card-bg: #444a50;
+    text-emphasis-color: black;
 }
+ .card:hover, p.card-text:hover{
+    --bs-card-bg: #f12997;
+    color: black;
+}
+
 
 .card img {
     width: 100%;
+} 
+/* boton card style */
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #36393e;
+    --bs-btn-border-color: #9d9d9d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #60254b;
+    --bs-btn-hover-border-color: #252c36;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4f5864;
+    --bs-btn-active-border-color: #2c2e30;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #32363a;
+    --bs-btn-disabled-border-color: #2e3032;
 }
 
 div.container.offset-md-2.p-3 {
@@ -336,3 +378,27 @@ h1#titulo {
     font-family: 'Cabin Sketch';
     color: #faf4f4;
 }
+
+/* ---------------------- form contact.html -------------------- */
+.form-control {
+    background-color: #a19e9e;
+    color: #000;  
+
+}
+
+
+/* -------------------- stats.html ------------------------*/
+
+
+.table-bordered>:not(caption)>*>* {
+    border-width: 0 var(--bs-border-width);
+}
+.table>:not(caption)>*>* {
+   
+    background-color: #2421219e;
+}
+.table-subtitle {
+    
+    color: #3a2676;
+}
+
