@@ -15,6 +15,14 @@
 <body>
     <div id="main">
         <!-- LOGO FONDO -->
+        <img src="./asset/img/fire1.png" alt="" class="fire1">
+
+        <img src="./asset/img/guitar1.png" alt="" class="guitar1">
+
+        <img src="./asset/img/guitar2.png" alt="" class="guitar2">
+
+
+
         <div id="inner">
 
             <div class="top1_wrapper">
@@ -25,9 +33,10 @@
                                 <div class="top1_inner clearfix">
 
                                     <header>
+                                        <h1 class="titulo">Home</h1>
                                         <div class="logo_wrapper"><a href="index.html" class="logo">
-                                                <img src="./asset/img/logo_amazing_events.png" alt="logo amazing events"
-                                                    style="width:60%"></a>
+                                                <img src="./asset/img/logo_amazing_events.png"
+                                                    alt="logo amazing events"></a>
                                         </div>
                                     </header>
 
@@ -38,125 +47,90 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!--  NAVEGACION  -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center">
-            <div class="container" id="nav">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+
+            <!--  NAVEGACION  -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center">
+                <div class="container" id="nav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="container offset-md-2 p-3">
+                        <div class="collapse navbar-collapse   m-0" id="navbarSupportedContent">
+                            <ul class="navbar-nav  mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./upcoming_events.html">Upcoming Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./past_events.html">Past Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./stats.html">Stats</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--  PREVIOUS - NEXT  -->
+            <div class="botones d-flex justify-content-center">
+                <button onClick="previous()" id="previous-page">
+                    <img src="./asset/img/previous.png" alt="previous" id="recorrer" width="50">
                 </button>
-                <div class="container offset-md-2 p-3">
-                    <div class="collapse navbar-collapse   m-0" id="navbarSupportedContent">
-                        <ul class="navbar-nav  mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./upcoming_events.html">Upcoming Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./past_events.html">Past Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./stats.html">Stats</a>
-                            </li>
-                        </ul>
+                <h2 id="actualpage">HOME</h2>
+                <button onClick="next()" id="next-page">
+                    <img src="./asset/img/next.png" alt="next" id="recorrer2" width="50">
+                </button>
+
+            </div>
+        </div>
+
+        <!-- buscador por catregoria  -->
+        <main>
+            <div class="container d-flex  justify-content-end p-3">
+                <div class="container col-lg-8 col-md-12 col-sm-12" id="checkbox">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1 Check-input</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2 Check-input</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">3 Check-input</label>
                     </div>
                 </div>
+                <div class="container d-flex-end col-lg-4 col-md-12" id="search">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-        </nav>
-        <!--  PREVIOUS - NEXT  -->
-        <div class="botones d-flex justify-content-center">
-            <button onClick="previous()" id="anterior">
-                <img src="./asset/img/previous.png" alt="previous" id="recorrer" width="50">
-            </button>
-            <a class="navbar-brand justify-content-center p-3" href="index.html">HOME</a>
-            <button onclick="next()" id="siguiente">
-                <img src="./asset/img/next.png" alt="next" id="recorrer2" width="50">
-            </button>
-        </div>
+            <!-- cards de fotos  -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4" id="cards-container">
+                <!-- ========== Aqui va las Cards============= -->
+            </div>
+        </main>
     </div>
-
-    <!-- buscador por catregoria  -->
-    <main>
-        <div class="container d-flex  justify-content-end p-3">
-            <div class="container col-lg-8 col-md-12 col-sm-12" id="checkbox">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">1 Check-input</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">2 Check-input</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label class="form-check-label" for="inlineCheckbox3">3 Check-input</label>
-                </div>
-            </div>
-            <div class="container d-flex-end col-lg-4 col-md-12" id="search">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-        <!-- cards de fotos  -->
-        <div class="row justify-content-center">
-            <div class="col-lg-2 col-md-6   mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="./asset/img/cinema.jpg" class="card-img-top" alt="Sala de cine">
-                        <h5 class="card-title">Cinema</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6  mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="./asset/img/marathon.jpg" class="card-img-top" alt="Marathon">
-                        <h5 class="card-title">Marathon</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 gap-3 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="./asset/img/museum_tour.jpg" class="card-img-top" alt="Museum">
-                        <h5 class="card-title">Museum</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-6 gap-3 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="./asset/img/music_concert.jpg" class="card-img-top" alt="Concert">
-                        <h5 class="card-title">Music Concert</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
     <!--  footer   -->
     <footer class="container  d-flex-columns gap-3 justify-content-center p-3">
+        <div class="div container d-flex" id="imagen-footer">
+            <img src="./asset/img/fire2.png" alt="" class="fire2">
+            <img src="./asset/img/microfono.png" alt="" class="microfono">
+            <img src="./asset/img/humo1.png" alt="" class="humo1">
+        </div>
+      
+
         <!-- imagen logo dentro del footer  -->
         <div class="logo_footer"><a href="index.html" class="logo">
                 <img src="./asset/img/amazingevents.png" style="width:20%" alt="logo amazing events"></a>
@@ -190,23 +164,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <!-- buscador por catregoria  -->
-    <script>
-        const pages = ['index.html', 'upcoming_events.html', 'past_events.html', 'contact.html', 'stats.html'];
-        let currentPageIndex = 0;
-        function previous() {
-            if (currentPageIndex > 0) {
-                currentPageIndex--;
-                window.location.href = pages[currentPageIndex];
-            }
-        }
-        function next() {
-            if (currentPageIndex < pages.length - 1) {
-                currentPageIndex++;
-                window.location.href = pages[currentPageIndex];
-            }
-        }  
-    </script>
+
+    <script type="module" src="./JS/data.js"></script>
+    <script type="module" src="./JS/index.js"></script>
+    <script type="module" src="./JS//main.js"></script>
 </body>
 
 </html>

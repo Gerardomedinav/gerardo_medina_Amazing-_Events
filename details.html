@@ -15,7 +15,10 @@
 <body>
     <div id="main">
         <!-- LOGO FONDO -->
-        <div id="inner">
+           <img src="./asset/img/fire1.png" alt="" class="fire1">
+           <img src="./asset/img/extintor.png" alt="" class="extintor">
+        
+           <div id="inner">
 
             <div class="top1_wrapper">
                 <div class="container">
@@ -25,6 +28,7 @@
                                 <div class="top1_inner clearfix">
 
                                     <header>
+                                        <h1 class="titulo">Details</h1>
                                         <div class="logo_wrapper"><a href="index.html" class="logo">
                                                 <img src="./asset/img/logo_amazing_events.png" alt="logo amazing events"
                                                     style="width:60%"></a>
@@ -70,11 +74,11 @@
                 </div>
             </div>
         </nav>
+        <h1 class="d-flex justify-content-center" id="titulo">Details</h1>
     </div>
     <!-- contenido -->
     <main>
-        <h1 class="d-flex justify-content-center" id="titulo">Details</h1>
-        <div class="container d-flex justify-content-center col-lg-6 p-3">
+          <div class="container d-flex justify-content-center col-lg-6 p-3">
             <div class="card mb-3 p-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
@@ -95,6 +99,11 @@
     <!--  footer   -->
     <footer class="container  d-flex-columns gap-3 justify-content-center p-3">
         <!-- imagen logo dentro del footer  -->
+        <div class="div container d-flex" id="imagen-footer">
+            <img src="./asset/img/fire2.png" alt="" class="fire2">
+            <img src="./asset/img/microfono.png" alt="" class="microfono">
+            <img src="./asset/img/humo1.png" alt="" class="humo1">
+        </div>
         <div class="logo_footer"><a href="index.html" class="logo">
                 <img src="./asset/img/amazingevents.png" style="width:20%" alt="logo amazing events"></a>
         </div>
@@ -128,22 +137,9 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <!-- buscador por catregoria  -->
-    <script>
-        const pages = ['index.html', 'upcoming_events.html', 'past_events.html', 'contact.html', 'stats.html'];
-        let currentPageIndex = 3;
-        function previous() {
-            if (currentPageIndex > 0) {
-                currentPageIndex--;
-                window.location.href = pages[currentPageIndex];
-            }
-        }
-        function next() {
-            if (currentPageIndex < pages.length - 1) {
-                currentPageIndex++;
-                window.location.href = pages[currentPageIndex];
-            }
-        }  
-    </script>
+    <script type="module" src="./JS/data.js"></script>
+    <script type="module" src="./JS/index.js"></script>
+    <script type="module" src="./JS//main.js"></script>
 </body>
 
 </html>
