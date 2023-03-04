@@ -22,6 +22,9 @@ main{
     height: 100%;
     z-index: 1;
 }
+div#checkbox{
+    background-color: #5251507c;
+}
 img.rollo, img.extintor{
     position: absolute;
     width: 30%;
@@ -162,7 +165,7 @@ body {
 }
 
 a.logo img {
-    filter: brightness(0.60);
+    filter: brightness(0.80);
     width: 50%;
     
 }
@@ -325,9 +328,15 @@ img#recorrer:hover, img#recorrer2:hover {
 
 /*---------------------search-------------------------------*/
 div.container.col-lg-8.col-md-12 input:hover,
+label {
+    margin-top: 5%;
+}
+div.container.col-lg-8.col-md-12 input:hover,
 label:hover {
     color: #e0129c;
+   
 }
+
 .btn-outline-success {
     --bs-btn-color: #c8dfd4;
     --bs-btn-border-color: #969997;
@@ -387,7 +396,7 @@ label:hover {
 }
 @media (max-width: 360px) {
     img.humo1{
-        margin-top: 50%;
+        
         height: 100%;
     }
     img.fire2 {
@@ -399,6 +408,30 @@ label:hover {
     }
     img.microfono{
         height: 30%;
+    }
+    img.extintor {
+        margin-left: 68%;
+        width: 20%;
+        top: 55%;
+        z-index: 1; 
+    }
+    div.card{
+        margin: 0;
+    }
+    img.guitar1{
+        margin-left: -20px;
+        margin-top: 130px;
+        width: 30%;
+        height: auto;
+        z-index: 11; 
+    }
+    div#checkbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        
+       
     }
 }
 
@@ -426,7 +459,7 @@ label:hover {
     }
     img.camara{
         margin-left: 68%;
-        top: 45%;
+        top: 50%;
         z-index: 1;
         width: 35%;
     }
@@ -448,6 +481,7 @@ label:hover {
         top: 55%;
         z-index: 1;
     }
+   
 
 
 }
