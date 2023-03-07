@@ -13,7 +13,7 @@ for (let i = 0; i < data.events.length; i++) {
   // Convertir la fecha del evento en formato de fecha de JavaScript
   const eventDate = new Date(item.date);
   // Solo agregar la tarjeta si la fecha del evento es anterior a la fecha actual
-  if (eventDate > currentDate) {
+  if (eventDate < currentDate) {
     cardsHTML +=  `
     <div class="card" id="card-body">
     <span></span>
