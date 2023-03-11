@@ -1,9 +1,14 @@
+
 const h1 = document.querySelector("h1");
 const h2 = document.querySelector("#actualpage");
-
 h2.textContent = h1.textContent;
+
+
+
 const previousBtn = document.getElementById("previous-page");
 const nextBtn = document.getElementById("next-page");
+
+
 
 const pageNames = [
   "index.html",
@@ -30,3 +35,15 @@ function nextPage() {
 
 previousBtn.addEventListener("click", previousPage);
 nextBtn.addEventListener("click", nextPage);
+
+
+
+/*function funcion(){
+  console.log("details");
+  location.href = "./details.html";
+ }
+const boton = document.getElementById('boton');
+
+boton.addEventListener("click", funcion);
+*/
+

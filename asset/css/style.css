@@ -921,3 +921,113 @@ div.botones.d-flex.justify-content-center {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+/*------------------------------- Details Section -----------------------------------*/
+
+.detail-card-container {
+    height: 60vh;
+    max-width: 90%;
+    border-radius: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(247, 247, 247, 0.6);
+  }
+  
+  #detail-card-body {
+    flex-basis: 50%;
+    background-color: rgba(255, 255, 255);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;  
+    height: 90%;
+    max-height: 100%;
+    max-width: 90%;  
+    padding-bottom: 1em;
+  }
+  
+  #detail-card-container capacity {
+    display: contents;   
+  }
+  
+  #detail-card-container { 
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  #detail-card-container price { 
+    color: rgb(63, 90, 164);
+    font-weight: bold;  
+  }
+  
+  #detail-card-container img {
+    border-radius: 0.5em;
+    max-height: 70vh;
+    object-fit: cover; 
+    padding-bottom: 1em;
+  }
+  
+  #buy-tickets-button {  
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  /*------------------------------- Cards Section -----------------------------------*/
+  
+
+  div#detail-card-body.big-card-body {
+    font-family: 'Cabin Sketch';
+    font-size: medium;
+    background: rgba(253, 29, 29, 0.699);
+    background: linear-gradient(14deg, rgba(253, 29, 29, 0.877) 51%, rgba(252, 176, 69, 0.747) 100%);
+    text-emphasis-color: rgb(243, 239, 239);
+    color: #fdfbfb;
+  }
+  
+  #cards-container button {
+   
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 0;
+  }
+  
+
+  
+#detail-card-container price {
+     color: rgb(247, 248, 250); 
+   
+}
+
+#detail-card-container h2 {
+   display: flex;
+   justify-content: center; 
+  
+}
+
+#buy-tickets-button {
+    margin-top: 1em;
+    font-weight: bold;
+    width: auto;
+    height: 50px;
+    margin-top: 20px;
+    background: rgb(92, 7, 7);
+    background: linear-gradient(14deg, rgba(92, 7, 7, 1) 51%, rgba(252, 69, 69, 1) 100%);
+    color: #fff;
+    border-color: #363433;
+}
+#buy-tickets-button:hover {
+    background: rgb(92, 7, 7);
+    background: linear-gradient(256deg, rgba(92, 7, 7, 1) 51%, rgba(252, 69, 69, 1) 100%);
+    transition: 10.5s;
+    --bs-btn-bg: #464747 !important; 
+    --bs-btn-border-color: #3a3c3d !important;
+}
