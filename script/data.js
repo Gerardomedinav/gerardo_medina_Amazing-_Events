@@ -22,7 +22,7 @@ var data = {
         "category":"Food Fair",
         "place":"Room A",
         "capacity":45000,
-        "assistance":42756,
+        "estimate":42756,
         "price":10
       },
       {
@@ -118,7 +118,7 @@ var data = {
         "category":"Race",
         "place":"New York",
         "capacity":3000000,
-        "assistance":2569800,
+        "estimate":2569800,
         "price":3
         },
       {

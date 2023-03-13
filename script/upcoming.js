@@ -6,7 +6,7 @@ const container = document.querySelector("#cards-container");
 
 function generateCardsHTML(events) {
   console.log("Generating cards upcoming ");
-  const upcomingEvents = events.filter((event) => new Date(event.date) < currentDate);
+  const upcomingEvents = events.filter((event) => new Date(event.date) > currentDate);
 
   const cardsHTML = upcomingEvents.map((event) => `
   <div class="card" id="card-body">
@@ -24,8 +24,7 @@ function generateCardsHTML(events) {
       <category>Category: ${event.category}</category>
       <place>Place: ${event.place}</place>
       <description>${event.description}</description>
-      <button class="book-now-btn" data-name="${event.name}" data-image="${event.image}" data-capacity="${event.capacity}" data-date="${event.date}" data-price="${event.price}" data-category="${event.category}" data-place="${event.place}" data-description="${event.description}">More Info</button>
-
+      <button class="book-now-btn" data-name="${event.name}" data-image="${event.image}" data-capacity="${event.capacity}" data-estimate="${event.estimate}" data-date="${event.date}" data-price="${event.price}" data-category="${event.category}" data-place="${event.place}" data-description="${event.description}">More Info</button>
   </div>
 </div> `).join("");
 
@@ -134,7 +133,8 @@ container.addEventListener("click", event => {
       category: event.target.getAttribute("data-category"),
       place: event.target.getAttribute("data-place"),
       description: event.target.getAttribute("data-description"),
-      capacity: event.target.getAttribute("data-capacity")
+      capacity: event.target.getAttribute("data-capacity"),
+      estimate: event.target.getAttribute("data-estimate")
     };
 
     // Guardar los datos del evento en el localStorage
@@ -144,3 +144,18 @@ container.addEventListener("click", event => {
     window.location.href = "./details.html";
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 
 ::-webkit-scrollbar {
     display: none;
@@ -17,13 +19,19 @@
 main {
     margin: 0 auto;
     position: relative;
-
+   
 }
 
 main {
-    height: 100%;
+    height: 60%;
     z-index: 1;
 }
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
 
 div#checkbox {
     background-color: #5251507c;
@@ -60,7 +68,7 @@ img.comida {
 
 img.camara {
     position: absolute;
-    top: 70%;
+    top: 300px;
     width: 50%;
     margin-left: -120px;
     z-index: -3;
@@ -68,8 +76,7 @@ img.camara {
 
 img.humo1 {
     position: absolute;
-
-    top: -90%;
+    top:-90%;
     width: 100%;
     z-index: -3;
 }
@@ -92,15 +99,17 @@ img.fire2 {
 }
 
 img.fire1 {
-    position: absolute;
-    left: 50%;
-    margin-left: -200px;
-    top: 0;
-    z-index: 1;
-    max-width: none;
-}
+  
+        position: absolute;
+        left: 30%;
+        top: 0;
+        z-index: 1;
+        max-width: none;
+        width: 40%;
+    }
 
 img.guitar2 {
+    width: 60%;
     position: absolute;
     left: 50%;
     margin-left: -900px;
@@ -392,7 +401,7 @@ div#search {
 
     img.guitar2 {
         position: absolute;
-        left: 10%;
+        left: 20%;
         margin-left: -300px;
         top: 100px;
         z-index: -2;
@@ -412,20 +421,28 @@ div#search {
 
     }
 }
-
+/*  ====================== resolucion celuar =======================  */
 @media (max-width: 360px) {
+    
+    img#smoke {
+        width: 90%;
+        height: auto;
+    }
+    img.guitar2{
+       left: -20%;
+    margin-left: 6%;
+        
+    }
     img.humo1 {
-
-        height: 100%;
+        width: 50%;
+        height: auto;
+        
     }
 
-    img.fire2 {
-        height: 50%;
-    }
+  
 
     img.fire1 {
-        width: 70%;
-        left: 70%;
+       width: 30%;
     }
 
     img.microfono {
@@ -433,18 +450,17 @@ div#search {
     }
 
     img.extintor {
-        margin-left: 68%;
+        margin-left: 0;
         width: 20%;
-        top: 55%;
+        top: 60%;
+        left: 70%;
         z-index: 1;
     }
 
     div.card {
         margin: 0;
     }
-
- 
-
+  
     div#checkbox {
         display: flex;
         flex-direction: column;
@@ -489,8 +505,8 @@ div#search {
     }
 
     img.camara {
-        margin-left: 68%;
-        top: 45%;
+        left: 95%;
+        top: 151px;
         z-index: 1;
         width: 35%;
     }
@@ -617,6 +633,10 @@ footer .social_icon li a {
 
 footer .social_icon li a:hover {
     transform: translateY(-10px);
+}
+img#logo2 {
+    background-color: rgba(255, 0, 0, 0.534);
+    
 }
 
 div.logo_footer a {
@@ -867,10 +887,21 @@ div.container#details {
     color: #fff;
 }
 
-.card button:hover {
+.card button:hover, button#home:hover {
     background: rgb(92, 7, 7);
     background: linear-gradient(256deg, rgba(92, 7, 7, 1) 51%, rgba(252, 69, 69, 1) 100%);
     transition: 10.5s;
+}
+
+button#home {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background: rgb(92, 7, 7);
+    background: linear-gradient(14deg, rgba(92, 7, 7, 1) 51%, rgba(252, 69, 69, 1) 100%);
+    color: #fff;
+    --bs-btn-bg: #464747 !important; 
+    --bs-btn-border-color: #3a3c3d !important;
 }
 
 div.container.offset-md-2.p-3 {
@@ -1031,3 +1062,52 @@ div.botones.d-flex.justify-content-center {
     --bs-btn-bg: #464747 !important; 
     --bs-btn-border-color: #3a3c3d !important;
 }
+
+div#detail-card-body > img#foto {
+    z-index: 2;
+}
+div#detail-card-body > img#fire3 {
+    margin-top:  -50%;
+    z-index: 1;
+}
+
+div#detail-card-body > img#foto:hover{
+   
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 5s;
+    opacity: 0.3;
+     
+    }
+
+img#smoke {
+    position: absolute;
+    width: 100%;
+    height: 230%;
+    z-index: -10;
+    top: 80%;
+    opacity: 0.3;
+}    
+
+h2#nombre  {
+    animation: animacion-texto 2s infinite;
+  }
+  
+  @keyframes animacion-texto {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  

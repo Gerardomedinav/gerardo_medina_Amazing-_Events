@@ -7,30 +7,57 @@ const container = document.querySelector("#cards-container");
 
 // Generar las tarjetas con todos los eventos
 function generateCardsHTML(events) {
-  const cardsHTML = events.map(item => `
-  <div class="card" id="card-body">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <div class="front">
-      <img src="${item.image}" alt="${item.title}">
-      <h2>${item.name}</h2>
-  </div>
-  <div class="back">
-      <date>Date: ${item.date}</date>
-      <price>Price:$ ${item.price}</price>
-      <category>Category: ${item.category}</category>
-      <place>Place: ${item.place}</place>
-      <description>Description: ${item.description}</description>
-      <button class="book-now-btn" data-name="${item.name}" data-image="${item.image}" data-capacity="${item.capacity}" data-date="${item.date}" data-price="${item.price}" data-category="${item.category}" data-place="${item.place}" data-description="${item.description}">More Info</button>
+  if (new Date(events.date) > new Date(events.currentDate)) {
+            const cardsHTML = events.map(item => `
+          <div class="card" id="card-body">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="front">
+              <img src="${item.image}" alt="${item.title}">
+              <h2>${item.name}</h2>
+          </div>
+          <div class="back">
+              <date>Date: ${item.date}</date>
+              <price>Price:$ ${item.price}</price>
+              <category>Category: ${item.category}</category>
+              <place>Place: ${item.place}</place>
+              <description>Description: ${item.description}</description>
+              
+              <button class="book-now-btn" data-_id="${item._id}" data-name="${item.name}" data-image="${item.image}" data-capacity="${item.capacity}" data-estimate="${item.estimate}"  data-date="${item.date}" data-price="${item.price}" data-category="${item.category}" data-place="${item.place}" data-description="${item.description}">More Info</button>
 
-  </div>
-</div> `).join("");
+          </div>
+        </div> `).join("");
 
-  return cardsHTML;
+            return cardsHTML;
+  } else {
+            const cardsHTML = events.map(item => `
+            <div class="card" id="card-body">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="front">
+                <img src="${item.image}" alt="${item.title}">
+                <h2>${item.name}</h2>
+            </div>
+            <div class="back">
+                <date>Date: ${item.date}</date>
+                <price>Price:$ ${item.price}</price>
+                <category>Category: ${item.category}</category>
+                <place>Place: ${item.place}</place>
+                <description>Description: ${item.description}</description>
+                
+                <button class="book-now-btn" data-_id="${item._id}" data-name="${item.name}" data-image="${item.image}" data-capacity="${item.capacity}" data-assistance="${item.assistance}" data-estimate="${item.estimate}" data-date="${item.date}" data-price="${item.price}" data-category="${item.category}" data-place="${item.place}" data-description="${item.description}">More Info</button>
+          
+            </div>
+          </div> `).join("");
+
+            return cardsHTML;
+
+  }
 }
-
 // Escuchar el evento click en los botones "More Info"
 container.addEventListener("click", event => {
   if (event.target.classList.contains("book-now-btn")) {
@@ -42,9 +69,13 @@ container.addEventListener("click", event => {
       category: event.target.getAttribute("data-category"),
       place: event.target.getAttribute("data-place"),
       description: event.target.getAttribute("data-description"),
-      capacity: event.target.getAttribute("data-capacity")
+      capacity: event.target.getAttribute("data-capacity"),
+      estimate: event.target.getAttribute("data-estimate"),
+      assistance: event.target.getAttribute("data-assistance")
+      
+     
     };
-
+    
     // Guardar los datos del evento en el localStorage
     localStorage.setItem("selectedEvent", JSON.stringify(eventData));
 
@@ -83,7 +114,7 @@ categories.forEach(category => {
   checkboxContainer.appendChild(div);
 
   // Agregar listener al checkbox
-  input.addEventListener('change', function(event) {
+  input.addEventListener('change', function (event) {
     // Obtener las categorías seleccionadas
     const selectedCategories = [...checkboxContainer.querySelectorAll('input:checked')].map(input => input.value);
 
@@ -136,17 +167,17 @@ function handleSearch(searchTerm) {
 const searchForm = document.querySelector('#search form');
 const searchInput = document.querySelector('#search input[type="search"]');
 
-searchForm.addEventListener('submit', function(event) {
+searchForm.addEventListener('submit', function (event) {
   event.preventDefault();
   const searchTerm = searchInput.value.toLowerCase().trim();
   handleSearch(searchTerm);
 });
 
 // Manejar la búsqueda cuando se cambia el contenido del input
-searchInput.addEventListener('input', function(event) {
+searchInput.addEventListener('input', function (event) {
   const searchTerm = event.target.value.toLowerCase().trim();
   handleSearch(searchTerm);
 });
 
-  
+
 
