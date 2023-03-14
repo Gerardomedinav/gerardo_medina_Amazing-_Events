@@ -7,9 +7,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-
+    border-color: #00ff2f;
+    border-style: double;
+   
+    }
+  
 
 ::-webkit-scrollbar {
     display: none;
@@ -82,11 +84,13 @@ img.humo1 {
 }
 
 img.microfono {
+    display: flex;
     position: absolute;
     width: 40%;
-    top: -7%;
-    left: 75%;
+    top: -15%;
+    left: 70% ;
     z-index: -2;
+    
 
 }
 
@@ -447,6 +451,7 @@ div#search {
 
     img.microfono {
         height: 30%;
+       
     }
 
     img.extintor {
@@ -476,7 +481,9 @@ div#search {
         margin-left: 0;
         align-items: baseline;
     }
+    
 }
+
 
 @media (max-width: 767px) {
 
@@ -1096,15 +1103,15 @@ h2#nombre  {
   
   @keyframes animacion-texto {
     0% {
-      transform: scale(1);
+      transform: scale(0.5);
       opacity: 1;
     }
     50% {
-      transform: scale(1.5);
+      transform: scale(1);
       opacity: 0.5;
     }
     100% {
-      transform: scale(1);
+      transform: scale(0.5);
       opacity: 1;
     }
   }
