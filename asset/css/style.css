@@ -27,6 +27,24 @@ main {
     height: 60%;
     z-index: 1;
 }
+main#table {
+    display: flex;
+    justify-content: center;
+}
+.progress-bar-label {
+ 
+    font-size: 90% !important;
+}
+
+#stats-table {
+   display: flex;
+   justify-content: center;
+   background-color: #fff0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+   
+    border-color: #ffffff00 !important;
+}
 footer{
     position: fixed;
     bottom: 0;
@@ -39,7 +57,15 @@ div#checkbox {
 }
 
 /* -----------------posicion de las imagenes de fondo ---------------*/
-img.rollo,
+img.rollo{
+        position: absolute;
+        width: 30%;
+        top: 60%;
+        left: -3%;
+        z-index: -3;
+        max-width: none;
+   
+}
 img.extintor {
     position: absolute;
     width: 30%;
@@ -402,14 +428,16 @@ div#search {
         padding: 10px;
     }
 
-    img.guitar2 {
-        position: absolute;
-        left: 20%;
-        margin-left: -300px;
-        top: 100px;
-        z-index: -2;
-        max-width: none;
-    }
+    
+        img.guitar2 {
+            position: absolute;
+            left: 5%;
+            top: 100px;
+            z-index: -2;
+            max-width: none;
+            margin-left: -18%;
+        }
+    
 
     img.humo1 {
         position: absolute;
@@ -479,6 +507,11 @@ div#search {
         flex-direction: column;
         margin-left: 0;
         align-items: baseline;
+    }
+    #stats-table {
+      
+        margin: 2em;
+      
     }
     
 }
@@ -1114,6 +1147,29 @@ h2#nombre  {
       opacity: 1;
     }
   }
+/* ================= barra de progreso en % de asistencia por evento ================= */   
+  .progress-bar-container {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #feee09;
+  }
   
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #08fd08;
+  }
+  
+  .progress-bar-label {
+    position: absolute;
+    height: 100%;
+    line-height: 20px;
+    padding: 0 5px;
+    font-weight: bold;
+    color: #171616;
+  }
   
   

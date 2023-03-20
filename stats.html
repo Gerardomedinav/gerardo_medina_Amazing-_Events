@@ -77,70 +77,41 @@
         </div>
     </div>
     <!-- contenido -->
-    <main>
-        <div class="container d-flex justify-content-center">
-
-            <table class="table table-bordered " id="stats-table">
-
-                <tbody>
-                    <tr>
-                        <th scope="col" colspan="3">Events statistics</th>
-                    </tr>
-                    <tr>
-                        <td class="table-subtitle">Events with the highest percentage od attendance</td>
-                        <td class="table-subtitle">Events with the lowest percentage of attendance</td>
-                        <td class="table-subtitle">Event with larger capacity</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                    </tr>
-                    <tr>
-                        <th scope="col" colspan="3">Upcoming events statistics by category</th>
-                    </tr>
-                    <tr>
-                        <td class="table-subtitle">Categories</td>
-                        <td class="table-subtitle">Revenues</td>
-                        <td class="table-subtitle">Percentage of attendance</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                    </tr>
-                    <tr>
-                        <th scope="col" colspan="3">Past events statistics by category</th>
-                    </tr>
-                    <tr>
-                        <td class="table-subtitle">Categories</td>
-                        <td class="table-subtitle">Revenues</td>
-                        <td class="table-subtitle">Percentage of attendance</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                        <td>Lorem, ipsum dolor.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
+    <main id="table">
+        <table class="table table-bordered " id="stats-table">
+            <tbody>
+                <tr>
+                    <th scope="col" colspan="3">Events statistics</th>
+                </tr>
+                <tr>
+                    <td class="table-subtitle">Events with the highest percentage of attendance</td>
+                    <td class="table-subtitle">Events with the lowest percentage of attendance</td>
+                    <td class="table-subtitle">Event with larger capacity</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th id="upcoming-table" scope="col" colspan="3">Upcoming events statistics by category</th>
+                </tr>
+                <tr>
+                    <td class="table-subtitle">Categories</td>
+                    <td class="table-subtitle">Revenues</td>
+                    <td class="table-subtitle">Percentage of attendance</td>
+                </tr>
+                <tr>
+                    <th id="past-table" scope="col" colspan="3">Past events statistics by category</th>
+                </tr>
+                <tr>
+                    <td class="table-subtitle">Categories</td>
+                    <td class="table-subtitle">Revenues</td>
+                    <td class="table-subtitle">Percentage of attendance</td>
+                </tr>
+            </tbody>
+        </table>
+        
     </main>
     <!--  footer   -->
     <footer class="container  d-flex-columns gap-3 justify-content-center p-3">
@@ -157,9 +128,12 @@
         </div>
         <!-- logo de redes sociales  -->
         <ul class="social_icon">
-            <li><a href="https://es-es.facebook.com/" target="_blank"><img src="./asset/img/social_ic1.png"   title="Facebook"></a></li>
-            <li><a href="https://twitter.com/" target="_blank"><img src="./asset/img/social_ic3.png"  title="Twitter"></a></li>
-            <li><a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="./asset/img/whatsapp.png"  width="32" title="WhatsApp"></a></li>
+            <li><a href="https://es-es.facebook.com/" target="_blank"><img src="./asset/img/social_ic1.png"
+                        title="Facebook"></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="./asset/img/social_ic3.png"
+                        title="Twitter"></a></li>
+            <li><a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="./asset/img/whatsapp.png"
+                        width="32" title="WhatsApp"></a></li>
         </ul>
         <!--  menu navegacion dentro del footer  -->
         <ul class="menu">
@@ -186,8 +160,8 @@
         crossorigin="anonymous"></script>
     <!-- buscador por catregoria  -->
     <script type="module" src="./script/data.js"></script>
-    <!--<script type="module" src=""></script> -->
-    <script type="module" src="./script//main.js"></script>
+    <script type="module" src="./script/stats.js"></script>
+    <script type="module" src="./script//main.js" defer></script>
 </body>
 
 </html>
