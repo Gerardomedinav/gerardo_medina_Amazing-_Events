@@ -1,7 +1,9 @@
 // Función asíncrona para obtener los datos de la API
 async function fetchData() {
   try {
-    const response = await fetch('https://mindhub-xj03.onrender.com/api/amazing');
+    const response = await fetch('https://mindhub-xj03.onrender.com/api/amazing'
+     //'./script/amazing.json'  // en caso que el servidor remoto no funcione
+     );
     const data = await response.json();
     return data;
   } catch (error) {
@@ -50,6 +52,7 @@ function actualizarTabla(data) {
    // Actualizar la tabla de estadísticas con los valores correspondientes
   const firstTd = document.querySelector('#stats-table tr:nth-child(3) td:nth-child(1)');
   const progressBarContainer = document.createElement("div");
+  //agregar una barra de progreso segun porcentaje maxAttendance
   progressBarContainer.classList.add("progress-bar-container");
   const progressBar = document.createElement('div');
   progressBar.classList.add('progress-bar');
@@ -63,7 +66,7 @@ function actualizarTabla(data) {
   progressBarContainer.appendChild(progressBarLabel); // Agregar la etiqueta de la barra de progreso
   firstTd.textContent = ""; // Eliminar el contenido anterior del td
   firstTd.appendChild(progressBarContainer); // Agregar el contenedor de la barra de progreso al td
-
+  //agregar una barra de progreso segun porcentaje minAttendance
   const secondTd = document.querySelector('#stats-table tr:nth-child(3) td:nth-child(2)');
   const progressBarContainer2 = document.createElement("div");
   progressBarContainer2.classList.add("progress-bar-container");
@@ -84,7 +87,7 @@ function actualizarTabla(data) {
   const thirdTd = document.querySelector('#stats-table tr:nth-child(3) td:nth-child(3)');
   thirdTd.textContent = attendanceStats.maxCapacityEvent;
 }
-
+//busca un numero decimal dentro de un string
 function extraerNumeroDecimal(str) {
   // Busca un número decimal en el string
   const regex = /[-+]?\d+(\.\d+)/g;

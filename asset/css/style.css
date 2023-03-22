@@ -932,7 +932,7 @@ div.container#details {
     transition: 10.5s;
 }
 
-button#home {
+button#home, button#home2 {
     display: flex;
     justify-content: center;
     margin-top: 10px;
