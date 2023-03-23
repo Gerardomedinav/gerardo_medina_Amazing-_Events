@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Fetch events from the API
 export async function fetchEvents() {
   try {
-    const response = await fetch( //'./script/amazing.json'  // en caso que el servidor remoto no funcione
+    const response = await fetch(
+       //'./script/amazing.json'  // en caso que el servidor remoto no funcione
       "https://mindhub-xj03.onrender.com/api/amazing"
     );
     const data = await response.json();
@@ -108,15 +109,15 @@ export function handleBookNowButtonClick(containerElement) {
 
 export function mostrar_categorias_checkbox(data, container, checkboxContainer,searchForm, searchInput) {
   // Map events by category
-  console.log(data);
+  //console.log(data);
   const categories = data.events.reduce((acc, event) => {
-    console.log(event);
+    //console.log(event);
     if (!acc.includes(event.category)) {
       acc.push(event.category);
     }
     return acc;
   }, []);
-  console.log(categories);
+  //console.log(categories);
 
   // Generate dynamic checkboxes
   
@@ -197,8 +198,7 @@ export function mostrar_categorias_checkbox(data, container, checkboxContainer,s
   }
 
   // Handle search when the form is submitted
-  const searchForm = document.querySelector("#search form");
-  const searchInput = document.querySelector('#search input[type="search"]');
+
 
   searchForm.addEventListener("submit", function (event) {
     event.preventDefault();
