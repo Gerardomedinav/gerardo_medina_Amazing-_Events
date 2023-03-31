@@ -1171,4 +1171,26 @@ h2#nombre  {
     font-weight: 500;
     color: #171616;
   }
+
+  p#no-events{
+     font-size: 2.2em;
+     animation: animacion-texto2 2s infinite;
+     color: white;
+     
+  }
+
   
+  @keyframes animacion-texto2 {
+    0% {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+  }

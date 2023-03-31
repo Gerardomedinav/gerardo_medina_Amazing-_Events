@@ -20,8 +20,6 @@ function generateDetailsHTML(eventData, currentDate) {
       <category>Category: ${eventData.category}</category>
       <place>Place: ${eventData.place}</place>
       <capacity>Capacity: ${eventData.capacity}</capacity>
-      <estimate>Estimate: ${eventData.estimate}</estimate>
-      <description>Description: ${eventData.description}</description>
       <div>
         ${
           hasAssistance

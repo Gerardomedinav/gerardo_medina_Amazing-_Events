@@ -1,5 +1,5 @@
 import { generateCardsHTML } from './main.js';
-import { handleBookNowButtonClick } from "./main.js";
+import { handleBookNowButtonClick } from "./.js";
 import { mostrar_categorias_checkbox } from "./main.js";
 
 async function loadPage() {
