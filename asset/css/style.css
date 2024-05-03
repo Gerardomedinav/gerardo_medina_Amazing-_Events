@@ -7,148 +7,204 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  
+   
+    }
+  
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-#main , main{
-    margin: 0 auto; 
-    position: relative; 
+#main,
+main {
+    margin: 0 auto;
+    position: relative;
    
 }
-main{
-    height: 100%;
+
+main {
+    height: 60%;
     z-index: 1;
 }
-img.rollo, img.extintor{
-    position: absolute;
-    width: 30%;
-    top: 90%; 
-    left: -3%; 
-    z-index: -3; 
-    max-width: none;
+main#table {
+    display: flex;
+    justify-content: center;
 }
-img.balon{
-    position: absolute;
-    width: 30%;
-    top: 90%; 
-    left: -3%; 
-    z-index: -3; 
-    max-width: none;
+.progress-bar-label {
+ 
+    font-size: 90% !important;
 }
-img.comida{
-    position: absolute;
-    width: 30%;
-    top: 90%; 
+
+#stats-table {
+   display: flex;
+   justify-content: center;
+   background-color: #fff0 !important;
+    margin: 0 !important;
+    border: 0 !important;
    
-    z-index: -3; 
+    border-color: #ffffff00 !important;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+div#checkbox {
+    background-color: #5251507c;
+}
+
+/* -----------------posicion de las imagenes de fondo ---------------*/
+img.rollo{
+        position: absolute;
+        width: 30%;
+        top: 60%;
+        left: -3%;
+        z-index: -3;
+        max-width: none;
+   
+}
+img.extintor {
+    position: absolute;
+    width: 30%;
+    top: 90%;
+    left: -3%;
+    z-index: -3;
+    max-width: none;
+}
+
+img.balon {
+    position: absolute;
+    width: 30%;
+    top: 90%;
+    left: -3%;
+    z-index: -3;
+    max-width: none;
+}
+
+img.comida {
+    position: absolute;
+    width: 30%;
+    top: 90%;
+
+    z-index: -3;
     max-width: none;
 }
 
 img.camara {
     position: absolute;
-    top:70%;
+    top: 300px;
     width: 50%;
     margin-left: -120px;
     z-index: -3;
 }
+
 img.humo1 {
     position: absolute;
-   
-    top: -90%;
+    top:-90%;
     width: 100%;
     z-index: -3;
 }
 
 img.microfono {
+    display: flex;
     position: absolute;
     width: 40%;
-    top: -7%;
-    left: 75%; 
+    top: -15%;
+    left: 70% ;
     z-index: -2;
     
+
 }
 
 img.fire2 {
     position: absolute;
-    width: 100%; 
+    width: 100%;
     z-index: -1;
-      
+
 
 }
 
-img.fire1{
+img.fire1 {
+  
+        position: absolute;
+        left: 30%;
+        top: 0;
+        z-index: 1;
+        max-width: none;
+        width: 40%;
+    }
+
+img.guitar2 {
+    width: 60%;
     position: absolute;
     left: 50%;
-    margin-left: -200px; 
-     top: 0; z-index: 1;
-      max-width: none;
-    }
-img.guitar1{
-    position: absolute;
-    left: 10%;
-    height: 25%;
-    margin-left: 60%; 
-    top: 0px;
-    z-index: -1;
-   
-    }
-
-img.guitar2{
-    position: absolute;
-    left: 50%;
-     margin-left: -900px; 
-     top: 10%; 
-     z-index: -2; 
-     max-width: none;
-    }
+    margin-left: -900px;
+    top: 10%;
+    z-index: -2;
+    max-width: none;
+    opacity: 0.75;
+}
 
 
-div#main{
-    position: relative; 
+div#main {
+    position: relative;
     z-index: 0;
 }
+
 main {
-    position: initial; 
+    position: initial;
     z-index: 10;
-    
+
 }
 
-.top1_inner{position: relative;}
-.top2_wrapper{position: relative; z-index: 30; margin-bottom: -30px;}
+.top1_inner {
+    position: relative;
+}
+
+.top2_wrapper {
+    position: relative;
+    z-index: 30;
+    margin-bottom: -30px;
+}
 
 
 
 h1.titulo {
-    
+
     filter: brightness(1.75);
     font-family: 'Cabin Sketch';
 }
-main{
+
+main {
     position: relative;
     margin-top: 5%;
     margin-bottom: 10%;
     z-index: 10;
 }
-h2#actualpage{
+
+/* navegador */
+h2#actualpage {
     margin-bottom: 0px;
     display: flex;
     align-items: center;
     background-color: #615f5f8f;
     width: 1000%;
-    }
+}
 
- div#nav.container {
+div#nav.container {
     align-content: center;
     margin: 0;
- }
- .div.container.offset-md-2.p-3 {
-    margin:0;
+}
 
- }
+.div.container.offset-md-2.p-3 {
+    margin: 0;
 
+}
+
+/* --------------------- body ------------- */
 body {
     background: url(../img/bg1.jpg) center top no-repeat #040305;
     border: 0;
@@ -158,13 +214,14 @@ body {
     min-width: 320px;
     position: relative;
     z-index: 10;
-    
+
 }
 
+/* imagen del logo */
 a.logo img {
-    filter: brightness(0.60);
+    filter: brightness(0.80);
     width: 50%;
-    
+
 }
 
 a.logo img:hover {
@@ -283,7 +340,7 @@ a.navbar-brand {
 }
 
 nav.navbar a:hover {
-    color: #e0129c;
+    color: #ff0a0a;
 }
 
 nav.navbar a.nav-link {
@@ -310,8 +367,10 @@ img#recorrer,
 img#recorrer2 {
     background-color: #9b9998;
 }
-img#recorrer:hover, img#recorrer2:hover {
-   background-color: #e0129c;
+
+img#recorrer:hover,
+img#recorrer2:hover {
+    background-color: #fd0606;
 }
 
 #actualpage {
@@ -319,21 +378,34 @@ img#recorrer:hover, img#recorrer2:hover {
     display: flex;
     justify-content: center;
     width: 50%;
-    font-family: 'Cabin Sketch';    
+    font-family: 'Cabin Sketch';
     color: rgb(255, 255, 255);
 }
 
 /*---------------------search-------------------------------*/
 div.container.col-lg-8.col-md-12 input:hover,
-label:hover {
-    color: #e0129c;
+label {
+    margin-top: 5%;
 }
+
+div.container.col-lg-8.col-md-12 input:hover,
+label:hover {
+    color: #fc0808;
+
+}
+
 .btn-outline-success {
     --bs-btn-color: #c8dfd4;
     --bs-btn-border-color: #969997;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #d7186f;
+    --bs-btn-hover-bg: #f50a0a;
     --bs-btn-hover-border-color: #121111;
+}
+div#search {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+   
 }
 
 /*----------------------Pantalla tablet----------------------*/
@@ -349,58 +421,101 @@ label:hover {
     div.container#nav {
         margin-left: 0;
     }
+
     .card img {
         width: 100%;
         height: auto !important;
         padding: 10px;
     }
-  
-    img.guitar2{
-        position: absolute;
-        left: 10%;
-         margin-left: -300px; 
-         top: 100px; 
-         z-index: -2; 
-         max-width: none;
+
+    
+        img.guitar2 {
+            position: absolute;
+            left: 5%;
+            top: 100px;
+            z-index: -2;
+            max-width: none;
+            margin-left: -18%;
         }
-    img.guitar1{
-        position: absolute;
-        height: 6%;
-        left: 70%;
-         margin-left: -100px; 
-         top: 0; 
-         z-index: -2; 
-         max-width: none;
-        
-    }
+    
+
     img.humo1 {
         position: absolute;
         margin-left: -20%;
         top: -70%;
-         width: 130%;
+        width: 130%;
         z-index: -3;
     }
-    div.container#imagen-footer img{
-    margin-top: 10%;       
+
+    div.container#imagen-footer img {
+        margin-top: 10%;
 
     }
 }
+/*  ====================== resolucion celuar =======================  */
 @media (max-width: 360px) {
-    img.humo1{
-        margin-top: 50%;
-        height: 100%;
+    
+    img#smoke {
+        width: 90%;
+        height: auto;
     }
-    img.fire2 {
-        height: 50%;
+    img.guitar2{
+       left: -20%;
+    margin-left: 6%;
+        
     }
+    img.humo1 {
+        width: 50%;
+        height: auto;
+        
+    }
+
+  
+
     img.fire1 {
-        width: 70%;
-        left: 70% ;
+       width: 30%;
     }
-    img.microfono{
+
+    img.microfono {
         height: 30%;
+       
     }
+
+    img.extintor {
+        margin-left: 0;
+        width: 20%;
+        top: 60%;
+        left: 70%;
+        z-index: 1;
+    }
+
+    div.card {
+        margin: 0;
+    }
+  
+    div#checkbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+
+
+    }
+
+    div#checkbox {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: baseline;
+    }
+    #stats-table {
+      
+        margin: 2em;
+      
+    }
+    
 }
+
 
 @media (max-width: 767px) {
 
@@ -408,40 +523,47 @@ label:hover {
         width: 70%;
         margin: 100px;
     }
-    img.microfono{
+
+    img.microfono {
         width: 30%;
         margin-left: -20%;
         top: 15%;
     }
+
     img.humo1 {
         position: absolute;
         width: 110%;
         top: -10%;
-        
+
         z-index: -3;
     }
+
     img.fire2 {
         width: 80%;
         top: 30%;
     }
-    img.camara{
-        margin-left: 68%;
-        top: 45%;
+
+    img.camara {
+        left: 95%;
+        top: 151px;
         z-index: 1;
         width: 35%;
     }
+
     img.balon {
         margin-left: 68%;
         width: 20%;
         top: 55%;
         z-index: 1;
     }
+
     img.comida {
         margin-left: 68%;
         width: 20%;
         top: 53%;
         z-index: 1;
     }
+
     img.rollo {
         margin-left: 68%;
         width: 20%;
@@ -450,12 +572,23 @@ label:hover {
     }
 
 
+
 }
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0 !important;
         padding-left: var(--bs-navbar-nav-link-padding-x);
     }
+    img.guitar2 {
+        position: absolute;
+        left: 10%;
+        margin-left: -300px;
+        top: 100px;
+        z-index: -2;
+        max-width: none;
+    }
+
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -470,18 +603,19 @@ span.navbar-toggler-icon {
     background-color: #9c9997;
     color: #fff !important;
 }
+
 span.navbar-toggler-icon:hover {
-    background-color: #ff0e86;
+    background-color: #ff0e0e;
     color: #313030 !important;
 }
 
 /*==============================form stats.html=============================*/
 #stats-table {
     border: 2px rgba(99, 102, 99, 0.637) solid;
-    
+
     background-color: #fff;
     max-width: 90%;
-    
+
     margin: 6em;
 }
 
@@ -528,7 +662,7 @@ footer .menu li {
 }
 
 footer .social_icon li a {
-   
+
     font-size: 2em;
     color: #fff;
     margin: 0 10px;
@@ -538,6 +672,10 @@ footer .social_icon li a {
 
 footer .social_icon li a:hover {
     transform: translateY(-10px);
+}
+img#logo2 {
+    background-color: rgba(255, 0, 0, 0.534);
+    
 }
 
 div.logo_footer a {
@@ -566,6 +704,7 @@ footer .menu li a:hover {
 ul.menu {
     background-color: #444a5081;
 }
+
 footer p {
     background-color: #444a509c;
     color: #ddd7d7;
@@ -573,7 +712,7 @@ footer p {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.1em;
-   
+
 }
 
 /*-----------------------form styles--------------------*/
@@ -592,44 +731,216 @@ button#button_form.btn.btn-light.mb-3 {
 }
 
 button#button_form.btn.btn-light.mb-3:hover {
-    background-color: #a0046c;
+    background-color: #f80000;
 }
 
 /*----------------------Card styles--------------------*/
 .card {
-   
-    --bs-card-bg: #444a50;
-    text-emphasis-color: black;
+    position: relative;
+    background: rgb(253, 29, 29);
+    background: linear-gradient(14deg, rgba(253, 29, 29, 0.877) 51%, rgba(252, 176, 69, 0.747) 100%);
+    text-emphasis-color: rgb(243, 239, 239);
+    color: #fdfbfb;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+
 }
- .card:hover, p.card-text:hover{
-    --bs-card-bg: #f12997;
+
+/* --------------- rotar  las cards ------------------- */
+.card div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    height: 250px;
+    backface-visibility: hidden;
+    transition: 1s;
+    align-items: center;
+}
+
+.card .front {
+    transform: perspective(500px)rotateY(0deg);
+}
+
+.description {
+    display: flex;
+    
+}
+.card .back {
+    margin-left: 5px;
+    margin-top: 15px;
+    font-size: 15px;
+    transform: perspective(500px)rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: perspective(500px)rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(500px)rotateY(360deg);
+}
+
+/* ------------------ borde de las cards animadas -------------------*/
+.card span {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.card span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #f8e801);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.card span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #f8e801);
+    animation: animate2 1s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.card span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #f8e801);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.card span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #f8e801);
+    animation: animate4 1s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.card:hover span {
+    opacity: 1;
+}
+
+.card:hover,
+p.card-text:hover {
     color: black;
     transform: scale(1.05);
-    position: relative ;
+    position: relative;
+
 }
 
 
-   
-   div#cards-container {
-       margin: 0;
-       display: flex;
-       justify-content: center;
-       align-items: stretch;
-       padding:20px;
-   }
-   div#card-body.card{
-       margin: 10px;
-       justify-content: space-between;
-       padding: 12px;
-       }
-   .card img {
-     width: 100%;
-     height: 150px;
-     padding: 10px;
-    } 
-/* boton card style */
+
+div#cards-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+}
+
+div#card-body.card {
+    margin: 10px;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+div.container#details {
+    padding: 0;
+
+}
+
+.card#card-details {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
 .card button {
-    background-color: #6d6c6b;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    background: rgb(92, 7, 7);
+    background: linear-gradient(14deg, rgba(92, 7, 7, 1) 51%, rgba(252, 69, 69, 1) 100%);
+    color: #fff;
+}
+
+.card button:hover, button#home:hover {
+    background: rgb(92, 7, 7);
+    background: linear-gradient(256deg, rgba(92, 7, 7, 1) 51%, rgba(252, 69, 69, 1) 100%);
+    transition: 10.5s;
+}
+
+button#home, button#home2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background: rgb(92, 7, 7);
+    background: linear-gradient(14deg, rgba(92, 7, 7, 1) 51%, rgba(252, 69, 69, 1) 100%);
+    color: #fff;
+    --bs-btn-bg: #464747 !important; 
+    --bs-btn-border-color: #3a3c3d !important;
 }
 
 div.container.offset-md-2.p-3 {
@@ -638,17 +949,20 @@ div.container.offset-md-2.p-3 {
 
 /*--------------------details.html-------------------- */
 h1#titulo {
-    background-color: #5251507c;
     font-family: 'Cabin Sketch';
-    color: #faf4f4;
+    background: rgba(253, 29, 29, 0.699);
+    background: linear-gradient(14deg, rgba(253, 29, 29, 0.877) 51%, rgba(252, 176, 69, 0.747) 100%);
+    text-emphasis-color: rgb(243, 239, 239);
+    color: #fdfbfb;
+
 
 }
-    
+
 
 /* ---------------------- form contact.html -------------------- */
 .form-control {
     background-color: #a19e9e;
-    color: #000;  
+    color: #000;
 
 }
 
@@ -659,12 +973,17 @@ h1#titulo {
 .table-bordered>:not(caption)>*>* {
     border-width: 0 var(--bs-border-width);
 }
+
 .table>:not(caption)>*>* {
-   
-    background-color: #2421219e;
+
+    background: rgb(253, 29, 29);
+    background: linear-gradient(14deg, rgba(194, 26, 26, 0.877) 51%, rgba(182, 126, 48, 0.747) 100%);
+    text-emphasis-color: rgb(243, 239, 239);
+    color: #fdfbfb;
 }
+
 .table-subtitle {
-    
+
     color: #3a2676;
 }
 
@@ -672,3 +991,206 @@ div.botones.d-flex.justify-content-center {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+/*------------------------------- Details Section -----------------------------------*/
+
+.detail-card-container {
+    height: 60vh;
+    max-width: 90%;
+    border-radius: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(247, 247, 247, 0.6);
+  }
+  
+  #detail-card-body {
+    flex-basis: 50%;
+    background-color: rgba(255, 255, 255);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;  
+    height: 90%;
+    max-height: 100%;
+    max-width: 90%;  
+    padding-bottom: 1em;
+  }
+  
+  #detail-card-container capacity {
+    display: contents;   
+  }
+  
+  #detail-card-container { 
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  #detail-card-container price { 
+    color: rgb(63, 90, 164);
+    font-weight: bold;  
+  }
+  
+  #detail-card-container img {
+    border-radius: 0.5em;
+    max-height: 70vh;
+    object-fit: cover; 
+    padding-bottom: 1em;
+  }
+  
+  #buy-tickets-button {  
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  /*------------------------------- Cards Section -----------------------------------*/
+  
+
+  div#detail-card-body.big-card-body {
+    font-family: 'Cabin Sketch';
+    font-size: medium;
+    background: rgba(253, 29, 29, 0.699);
+    background: linear-gradient(14deg, rgba(253, 29, 29, 0.877) 51%, rgba(252, 176, 69, 0.747) 100%);
+    text-emphasis-color: rgb(243, 239, 239);
+    color: #fdfbfb;
+  }
+  
+  #cards-container button {
+   
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 0;
+  }
+  
+
+  
+#detail-card-container price {
+     color: rgb(247, 248, 250); 
+   
+}
+
+#detail-card-container h2 {
+   display: flex;
+   justify-content: center; 
+  
+}
+
+#buy-tickets-button {
+    margin-top: 1em;
+    font-weight: bold;
+    width: auto;
+    height: 50px;
+    margin-top: 20px;
+    background: rgb(92, 7, 7);
+    background: linear-gradient(14deg, rgba(92, 7, 7, 1) 51%, rgba(252, 69, 69, 1) 100%);
+    color: #fff;
+    border-color: #363433;
+}
+#buy-tickets-button:hover {
+    background: rgb(92, 7, 7);
+    background: linear-gradient(256deg, rgba(92, 7, 7, 1) 51%, rgba(252, 69, 69, 1) 100%);
+    transition: 10.5s;
+    --bs-btn-bg: #464747 !important; 
+    --bs-btn-border-color: #3a3c3d !important;
+}
+
+div#detail-card-body > img#foto {
+    z-index: 2;
+}
+div#detail-card-body > img#fire3 {
+    margin-top:  -50%;
+    z-index: 1;
+}
+
+div#detail-card-body > img#foto:hover{
+   
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 5s;
+    opacity: 0.3;
+     
+    }
+
+img#smoke {
+    position: absolute;
+    width: 100%;
+    height: 230%;
+    z-index: -10;
+    top: 80%;
+    opacity: 0.3;
+}    
+
+h2#nombre  {
+    animation: animacion-texto 2s infinite;
+  }
+  
+  @keyframes animacion-texto {
+    0% {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+  }
+/* ================= barra de progreso en % de asistencia por evento ================= */   
+  .progress-bar-container {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #feee09;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #08fd08;
+  }
+  
+  .progress-bar-label {
+    position: absolute;
+    height: 100%;
+    line-height: 20px;
+    padding: 0 5px;
+    font-weight: 500;
+    color: #171616;
+  }
+
+  p#no-events{
+     font-size: 2.2em;
+     animation: animacion-texto2 2s infinite;
+     color: white;
+     
+  }
+
+  
+  @keyframes animacion-texto2 {
+    0% {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+  }
